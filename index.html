@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style2.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="parentLogo">
+          <img src="transparentVikas.png" id="logo" alt="Logo" />
+        </div>
+        <div id="hamburger">&#9776;</div>
+
+        <div class="nav-bar2">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="hobbies.html" class="nav-link">Hobbies</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="project.html" class="nav-link">Project</a>
+          <button id="darkModeToggle">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero-section">
+      <section class="hero">
+        <h1>Hi, I'm Vikas Yadav</h1>
+        <p>A passionate Web Developer and Tech Enthusiast</p>
+        <a href="project.html" class="cta-btn">See My Work</a>
+      </section>
+      <section class="about-summary">
+        <h2>About Me</h2>
+        <p>
+          I'm a self-driven developer with a love for building sleek,
+          user-friendly web apps. Skilled in HTML, CSS, JavaScript, and React.
+          Currently exploring backend tech like Node.js.
+        </p>
+      </section>
+      <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="project-cards">
+          <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio built with HTML, CSS & JavaScript.</p>
+            <a href="project.html">Learn More →</a>
+          </div>
+          <!-- Add more cards -->
+        </div>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL(oracle)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Click the Button</h2>
+        <button id="alertButton">Click Me!</button>
+      </section>
+
+      <section id="contact">
+        <section class="contact-cta">
+          <h2>Let’s Work Together</h2>
+          <p>
+            Email me at
+            <a href="vikas.vikasyadav2005@gmail.com"
+              >vikas.vikasyadav2005@gmail.com</a
+            >
+          </p>
+        </section>
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>My To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Enter a task" />
+        <button id="addTodo">Add Task</button>
+        <ul id="todoList"></ul>
+      </section>
+    </div>
+
+    <div id="popupMessage" class="hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="parentLogo">
+          <img src="transparentVikas.png" id="logo" alt="Logo" />
+        </div>
+        <div id="hamburger">&#9776;</div>
+        <div class="nav-bar2">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="hobbies.html" class="nav-link">Hobbies</a>
+          <a href="project.html" class="nav-link">Project</a>
+          <a href="product.html" class="nav-link">Products</a>
+          <button id="darkModeToggle">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="hero-section">
+      <h1>Product Listing</h1>
+
+      <div>
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Books">Books</option>
+          <option value="Clothing">Clothing</option>
+        </select>
+
+        <label for="sortOption">Sort by:</label>
+        <select id="sortOption">
+          <option value="default">Default</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
+          <option value="ratingHighLow">Rating: High to Low</option>
+        </select>
+      </div>
+
+      <div id="productContainer" class="product-grid"></div>
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>

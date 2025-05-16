@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="parentLogo">
+          <img src="transparentVikas.png" id="logo" alt="Logo" />
+        </div>
+        <div id="hamburger">&#9776;</div>
+        <div class="nav-bar2">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="hobbies.html" class="nav-link">Hobbies</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="project.html" class="nav-link">Project</a>
+          <button id="darkModeToggle">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="projectSection">
+      <h1>My Projects</h1>
+
+      <div class="project-card">
+        <h2>Portfolio Website</h2>
+        <p>
+          This is the website you're currently viewing! Built with HTML, CSS,
+          and JavaScript.
+        </p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h2>Currency Converter</h2>
+        <p>
+          A simple, responsive currency converter built using HTML, CSS, and
+          JavaScript. This app fetches live exchange rates from an API and
+          allows users to convert currencies in real-time.
+        </p>
+        <a
+          href="https://github.com/Iamvikas17/Currency-Converter"
+          target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <!-- Add more projects here -->
+    </section>
+
+    <script>
+      const darkModeToggle = document.getElementById("darkModeToggle");
+
+      darkModeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark-mode");
+        document.querySelector("header").classList.toggle("dark-mode");
+        darkModeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.querySelector(".nav-bar2");
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
